@@ -1,1 +1,1 @@
-test run 5
+test run 5 of astro/sanity jamstack ¯\ _ (ツ)_ /¯
