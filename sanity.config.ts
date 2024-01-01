@@ -2,7 +2,7 @@ import {defineConfig} from 'sanity';
 import {deskTool} from 'sanity/desk';
 import {visionTool} from '@sanity/vision';
 import { sanityClient } from 'sanity:client';
-//import { schemaTypes } from './schemas/index.ts';
+import { schemaTypes } from './schemas/index.ts';
 
 const { projectId, dataset } = sanityClient.config();
 
@@ -22,7 +22,7 @@ export default defineConfig({
   ],
   
   schema: {
-//    types: schemaTypes,
+    types: schemaTypes,
   },
 })
   
