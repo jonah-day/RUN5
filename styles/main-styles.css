@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* SLOTH */
+
+@font-face {
+    font-family: 'Sloth Extrabold';
+    src: url('/fonts/sloth_extrabold-webfont.woff') format('woff');
+    font-display: swap;
+  }
+
+@font-face {
+  font-family: 'Sloth Bold';
+  src: url('/fonts/sloth_bold-webfont.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Sloth Semibold';
+    src: url('/fonts/sloth-semibold-webfont.woff') format('woff');
+    font-display: swap;
+  }
+
+@font-face {
+  font-family: 'Sloth Regular';
+  src: url('/fonts/sloth-regular-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sloth Light';
+    src: url('/fonts/sloth-light-webfont.woff') format('woff');
+    font-display: swap;
+  }

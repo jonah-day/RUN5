@@ -2,7 +2,16 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				'sloth-extrabold': 'Sloth Extrabold',
+				'sloth-bold': 'Sloth Bold',
+				'sloth-semibold': 'Sloth Semibold',
+				'sloth-normal': 'Sloth Regular',
+				'sloth-light': 'Sloth Light',
+
+			}
+		},
 	},
 	plugins: [],
 }
