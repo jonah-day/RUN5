@@ -10,7 +10,10 @@ export default {
 				'sloth-normal': 'Sloth Regular',
 				'sloth-light': 'Sloth Light',
 
-			}
+			},
+			fontSize: {
+				'15xl': '14rem',
+			},
 		},
 	},
 	plugins: [],
