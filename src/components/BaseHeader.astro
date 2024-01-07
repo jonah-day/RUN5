@@ -3,17 +3,17 @@ import Logo from "./Logo.astro";
 
 ---
 
-<header>
-  <div>
-    <div>
+<header class="fixed justify-center flex w-full h-16">
+  <div class="fixed w-11/12 rounded-2xl flex h-16 mt-3 items-center bg-frost backdrop-blur-lg">
+    <div class="flex w-4/12 justify-center">
       <Logo></Logo>
     </div>
-    <div>
-      <menu>
-        <li><a href="./">Home</a></li>
-        <li><a href="./portfolio">Portfolio</a></li>
-        <li><a href="./about">About</a></li>
-        <li><a href="./contact">Contact</a></li>
+    <div class="flex w-8/12">
+      <menu class="flex w-full justify-around">
+        <li><a href="./" class="font-sloth-extrabold">Home</a></li>
+        <li><a href="./portfolio" class="font-sloth-extrabold">Portfolio</a></li>
+        <li><a href="./about" class="font-sloth-extrabold">About</a></li>
+        <li><a href="./contact" class="font-sloth-extrabold">Contact</a></li>
       </menu>
     </div>
   </div>

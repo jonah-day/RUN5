@@ -14,6 +14,9 @@ export default {
 			fontSize: {
 				'15xl': '14rem',
 			},
+			colors: {
+				'frost': '#ffffff88',
+			},
 		},
 	},
 	plugins: [
