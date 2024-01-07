@@ -1,24 +1,33 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import BaseHeader from "../components/BaseHeader.astro";
-import Logo from "../components/Logo.astro";
+import Footer from "../components/Footer.astro";
 
 ---
 <html lang="en">
 
 	<BaseHead>
-    </BaseHead>
-	<body class="flex items-center flex-col">
-      <div class="bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 bg-cover h-screen fixed inset-0 -z-10 bg-fixed">
-        <BaseHeader>
-        </BaseHeader>
+  </BaseHead>
 
-        <slot>
+	<body class="flex flex-col items-center">
+
+    <div class="bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 w-full h-screen fixed inset-0 -z-50">
+    </div>
+
+    <BaseHeader>
+    </BaseHeader>
+
+    <div class="flex justify-center bg-neutral-100 w-10/12 min-h-screen mt-32 rounded-2xl">
+      <slot>
     
     
-        </slot>
+      </slot>
+    </div>
+
+    <Footer>
+    </Footer>
 
     
-      </div>
+    <script src="../lib/menu.js"></script>
 	</body>
 </html>

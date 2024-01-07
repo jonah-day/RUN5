@@ -2,8 +2,109 @@
 import Logo from "./Logo.astro";
 
 ---
+  
 
-<header class="fixed justify-center flex w-full h-16">
+<header class="fixed justify-center flex w-full mt-3 h-16">
+
+  <!-- MAIN CONTAINER -->
+  <div class="fixed w-11/12 rounded-2xl flex h-16 items-center z-0">
+
+  <!-- BACKGROUND LAYER -->
+    <div class="fixed w-11/12 rounded-2xl flex h-16 items-center bg-frost backdrop-blur-lg z-10"></div>
+  
+  <!-- MENU LAYER -->
+    <div class="menu-layer fixed flex w-11/12 h-16 items-center z-20 opacity-0 invisible transition-header-opacity">
+      <menu class="flex w-11/12 justify-around flex-row items-center mr-16">
+        <li><a href="./" class="list-none font-sloth-extrabold">Home</a></li>
+        <li><a href="./portfolio" class="list-none font-sloth-extrabold">Portfolio</a></li>
+        <li><a href="./about" class="list-none font-sloth-extrabold">About</a></li>
+        <li><a href="./contact" class="list-none font-sloth-extrabold">Contact</a></li>
+      </menu>
+    </div>
+
+  <!-- INSET ANIMATED BUTTON LAYER -->
+    <div class="flex fixed w-11/12 justify-end items-center h-16 z-40 pointer-events-none">
+      <div class="w-[var(--menu-box-width)] transition-animated-box h-11 mr-[10px] ml-[10px] rounded-xl bg-transparent shadow-menu-inset-new"></div>
+    </div>
+
+  <!-- LOGO LAYER -->
+    <div class="logo-container flex fixed h-16 justify-center items-center w-11/12 z-40 visible opacity-100 transition-header-opacity">
+        <Logo>
+        </Logo>
+    </div>
+
+  <!-- BUTTON LAYER -->
+    <div class="fixed flex h-16 w-11/12 justify-end items-center z-50 pointer-events-none">
+      <button class="main-dropdown mr-[15.5px] w-10 cursor-pointer border-none bg-transparent pointer-events-auto">
+        <div class="w-[30px] h-1 m-1 bg-black"></div>
+        <div class="w-[30px] h-1 m-1 bg-black"></div>
+        <div class="w-[30px] h-1 m-1 bg-black"></div>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+
+
+<!-- 
+<header class="fixed justify-center flex w-full mt-3 h-16">
+
+
+  <div class="fixed w-11/12 rounded-2xl flex h-16 items-center z-0">
+
+
+    <div class="fixed w-11/12 rounded-2xl flex h-16 items-center bg-frost backdrop-blur-lg z-10"></div>
+  
+
+    <div class="fixed flex w-11/12 h-16 items-center z-20">
+      <menu class="flex w-8/12 justify-between flex-row items-center ml-16">
+        <li><a href="./" class="list-none font-sloth-extrabold">Home</a></li>
+        <li><a href="./portfolio" class="list-none font-sloth-extrabold">Portfolio</a></li>
+        <li><a href="./about" class="list-none font-sloth-extrabold">About</a></li>
+        <li><a href="./contact" class="list-none font-sloth-extrabold">Contact</a></li>
+      </menu>
+    </div>
+
+    <div class="flex fixed w-11/12 justify-end items-center h-16 z-30 pointer-events-none">
+      <div class="w-full h-full mr-[var(--menu-box-width)] transition-animated-cover bg-frost rounded-2xl"></div>
+      <div class="w-[var(--menu-buffer-width)]"></div>
+    </div>
+
+
+    <div class="flex fixed w-11/12 justify-end items-center h-16 z-40 pointer-events-none">
+      <div class="w-[var(--menu-box-width)] transition-animated-box h-[42px] mr-11 ml-3 rounded-2xl bg-transparent shadow-menu-inset"></div>
+    </div>
+
+    <div class="logo-container flex fixed h-16 justify-center items-center w-11/12 z-40 visible opacity-100 transition-logo-opacity">
+        <Logo>
+        </Logo>
+    </div>
+
+    <div class="fixed flex h-16 w-11/12 justify-end items-center z-50 pointer-events-none">
+      <button class="main-dropdown mr-12 w-10 cursor-pointer border-none bg-transparent pointer-events-auto">
+        <div class="w-8 h-1 m-1 bg-black"></div>
+        <div class="w-8 h-1 m-1 bg-black"></div>
+        <div class="w-8 h-1 m-1 bg-black"></div>
+      </button>
+    </div>
+
+  </div>
+</header> -->
+
+
+
+
+
+
+
+
+
+<!-- <header class="fixed justify-center flex w-full h-16">
   <div class="fixed w-11/12 rounded-2xl flex h-16 mt-3 items-center bg-frost backdrop-blur-lg">
     <div class="flex w-4/12 justify-center">
       <Logo></Logo>
@@ -17,4 +118,4 @@ import Logo from "./Logo.astro";
       </menu>
     </div>
   </div>
-</header>
+</header> -->
