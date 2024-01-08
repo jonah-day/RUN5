@@ -19,8 +19,8 @@ const thisDataset = PUBLIC_SANITY_STUDIO_DATASET || PUBLIC_SANITY_DATASET;
 // https://astro.build/config
 export default defineConfig({
   integrations: [sanity({
-    projectId: thisProjectId,
-    dataset: thisDataset,
+    projectId: PUBLIC_SANITY_PROJECT_ID,
+    dataset: PUBLIC_SANITY_DATASET,
     apiVersion: `2022-03-07`,
     studioBasePath: '/admin',
     //`false` if you want to ensure fresh data / Set useCdn to false if you're building statically
