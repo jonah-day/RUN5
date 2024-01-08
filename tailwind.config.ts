@@ -20,14 +20,15 @@ export default {
 			transitionProperty: {
 				'animated-cover': 'margin-right 0.4s cubic-bezier(0.44, 0.21, 0, 1.1)',
                 'animated-box': 'width 0.4s cubic-bezier(0.44, 0.21, 0, 1)',
-				'header-opacity': 'opacity .2s cubic-bezier(.97, .01, .83, .67)',
+				'header-opacity': 'opacity 0.2s cubic-bezier(.97, .01, .83, .67)',
+				'hamburger-width': 'width 0.4s cubic-bezier(0.44, 0.21, 0, 1.1)'
 			},
 			boxShadow: {
                 'menu-inset': 'inset 2px 4px 10px hsl(0, 0%, 25%), 0 0 0 10px #ffffff88',
-				'menu-inset-new': 'inset 2px 4px 10px hsl(0, 0%, 25%)',
+				'menu-inset-new': 'inset 2px 4px 10px #3949AB',
 			},
-			pointerEvents: {
-                'all': 'all',
+			width: {
+				'ultrawide': '1400px'
 			},
 		},
 	},
@@ -35,3 +36,6 @@ export default {
 		require('@tailwindcss/typography'),
 	],
 }
+
+
+// hsl(0, 0%, 25%)

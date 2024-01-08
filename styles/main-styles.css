@@ -5,9 +5,15 @@
 /* VARIABLES */
 
 :root {
-  --menu-box-width: 54px;
-  transition: --menu-box-width 0.3s cubic-bezier(0.44, 0.21, 0, 1);
+  --menu-box-desk-width: 54px;
+  transition: --menu-box-desk-width 0.4s cubic-bezier(0.44, 0.21, 0, 1);
+  --menu-box-width: 40.5px;
+  transition: --menu-box-width 0.4s cubic-bezier(0.44, 0.21, 0, 1);
   --menu-buffer-width: 70px;
+  --menu-bar-desk-width: 30px;
+  transition: --menu-bar-desk-width 0.4s cubic-bezier(0.44, 0.21, 0, 1.1);
+  --menu-bar-width: 24px;
+  transition: --menu-bar-width 0.4s cubic-bezier(0.44, 0.21, 0, 1.1);
 }
 
 /* SLOTH */
@@ -40,3 +46,4 @@
     src: url('/fonts/sloth-light-webfont.woff') format('woff');
     font-display: swap;
   }
+
