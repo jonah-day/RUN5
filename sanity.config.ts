@@ -3,6 +3,7 @@ import {deskTool} from 'sanity/desk';
 import {visionTool} from '@sanity/vision';
 import { sanityClient } from 'sanity:client';
 import { schemaTypes } from './schemas/index.ts';
+import { vercelDeployTool } from 'sanity-plugin-vercel-deploy';
 
 const { projectId, dataset } = sanityClient.config();
 
@@ -18,7 +19,8 @@ export default defineConfig({
   dataset,
   plugins: [
     deskTool(),
-    visionTool()
+    visionTool(),
+    vercelDeployTool(),
   ],
   
   schema: {
