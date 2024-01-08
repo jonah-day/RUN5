@@ -12,16 +12,16 @@ const {
 } = loadEnv(import.meta.env.MODE, process.cwd(), '');
 
 // Different environments use different variables
-const thisProjectId = PUBLIC_SANITY_STUDIO_PROJECT_ID || PUBLIC_SANITY_PROJECT_ID;
-const thisDataset = PUBLIC_SANITY_STUDIO_DATASET || PUBLIC_SANITY_DATASET;
+const projectId = PUBLIC_SANITY_STUDIO_PROJECT_ID || PUBLIC_SANITY_PROJECT_ID;
+const dataset = PUBLIC_SANITY_STUDIO_DATASET || PUBLIC_SANITY_DATASET;
 
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [sanity({
-    projectId: PUBLIC_SANITY_PROJECT_ID,
-    dataset: PUBLIC_SANITY_DATASET,
-    apiVersion: `2022-03-07`,
+    projectId,
+    dataset,
+    apiVersion: `2024-01-07`,
     studioBasePath: '/admin',
     //`false` if you want to ensure fresh data / Set useCdn to false if you're building statically
     useCdn: false

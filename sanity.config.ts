@@ -14,8 +14,8 @@ if (!projectId || !dataset)
 export default defineConfig({
   name: 'default',
   title: 'RUN5',
-  projectId: projectId,
-  dataset: dataset,
+  projectId,
+  dataset,
   plugins: [
     deskTool(),
     visionTool()
