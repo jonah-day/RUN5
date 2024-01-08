@@ -24,8 +24,9 @@ export default {
 				'hamburger-width': 'width 0.4s cubic-bezier(0.44, 0.21, 0, 1.1)'
 			},
 			boxShadow: {
-                'menu-inset': 'inset 2px 4px 10px hsl(0, 0%, 25%), 0 0 0 10px #ffffff88',
-				'menu-inset-new': 'inset 2px 4px 10px #3949AB',
+				'menu-inset-desk': 'inset 2px 4px 10px #4654BB',
+				'menu-inset': 'inset 2px 4px 10px #5C6AC4',
+
 			},
 			width: {
 				'ultrawide': '1400px'
