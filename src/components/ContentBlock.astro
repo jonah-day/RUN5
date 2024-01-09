@@ -1,0 +1,11 @@
+---
+import type { ContentBlock } from '../lib/getContentBlock';
+import  getContentBlocks from '../lib/getContentBlock';
+import PortableText from './PortableText.astro';
+
+const blocks = await getContentBlocks();
+const about = blocks[0];
+
+---
+
+<p> { about.title } </p>
