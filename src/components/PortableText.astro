@@ -1,0 +1,19 @@
+---
+import Code from "./Code.astro";
+import YouTube from './Youtube.astro';
+import {PortableText as PortableTextInternal} from "astro-portabletext"
+import SanityImage from './SanityImage.astro';
+
+const components = {
+  type: {
+    youtube: YouTube,
+    image: SanityImage,
+    code: Code,
+  },
+  mark: {
+  }
+};
+
+---
+
+<PortableTextInternal value={Astro.props.value} components={components} />
