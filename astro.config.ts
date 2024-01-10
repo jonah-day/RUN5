@@ -4,6 +4,7 @@ import react from '@astrojs/react';
 import { loadEnv } from 'vite';
 import vercel from '@astrojs/vercel/serverless';
 import tailwind from '@astrojs/tailwind';
+
 const {
   PUBLIC_SANITY_STUDIO_PROJECT_ID,
   PUBLIC_SANITY_STUDIO_DATASET,
@@ -16,7 +17,7 @@ const projectId = PUBLIC_SANITY_STUDIO_PROJECT_ID || PUBLIC_SANITY_PROJECT_ID;
 const dataset = PUBLIC_SANITY_STUDIO_DATASET || PUBLIC_SANITY_DATASET;
 
 
-// https://astro.build/config
+
 export default defineConfig({
   integrations: [sanity({
     projectId,
@@ -25,9 +26,17 @@ export default defineConfig({
     studioBasePath: '/admin',
     //`false` if you want to ensure fresh data / Set useCdn to false if you're building statically
     useCdn: false
-  }), react(),
+  }),
+  react(),
   tailwind()
   ],
   output: 'hybrid',
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+    speedInsights: {
+      enabled: true,
+    },
+  }),
 });

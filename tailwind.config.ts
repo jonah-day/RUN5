@@ -31,6 +31,10 @@ export default {
 			width: {
 				'ultrawide': '1400px'
 			},
+			animation: {
+                'pool': 'poolAnimation 20s infinite',
+				'poolRev': 'poolAnimationRev 20s infinite',
+			},
 		},
 	},
 	plugins: [

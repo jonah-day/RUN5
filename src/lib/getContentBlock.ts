@@ -1,6 +1,7 @@
 import { sanityClient } from 'sanity:client';
 import groq from 'groq';
-import type { Image, Slug, TypedObject } from '@sanity/types';
+import type { Image, Slug } from '@sanity/types';
+import type { PortableTextBlock } from "@portabletext/types";
 
 
 interface ContentBlock {
@@ -11,7 +12,7 @@ interface ContentBlock {
   _rev: string;
   name: string;
   title: string;
-  content: TypedObject;
+  content: PortableTextBlock;
   image: Image;
   slug: Slug;
 }
@@ -19,18 +20,10 @@ interface ContentBlock {
 async function getContentBlocks() {
 
   return await sanityClient.fetch<ContentBlock[]>(groq`
-  *[_type == "contentBlock"] {
-    ...,
-    "content": content[] {
-      ...,
-      _type == "image" => {
-        ...,
-        asset->
-      }
-    }
-  }
+  *[_type == "contentBlock"]
 `);
 }
+
 
 
 export default getContentBlocks;

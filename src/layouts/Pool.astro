@@ -1,0 +1,49 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import BaseHeader from "../components/BaseHeader.astro";
+import Footer from "../components/Footer.astro";
+
+---
+<html lang="en">
+
+	<BaseHead>
+  </BaseHead>
+
+	<body class="flex flex-col items-center">
+
+    <div class="bg-[#1a1033] w-full h-screen fixed inset-0 -z-50">
+    </div>
+
+
+    <div class="blob absolute top-1/2 -z-30">
+        <div class="h-96 aspect-square rounded-full bg-gradient-to-t from-pink-500 via-red-500 to-yellow-500 animate-poolRev">
+        </div>
+    </div>
+
+    <div class="blob absolute top-1/2 -z-20">
+        <div class="h-96 aspect-square rounded-full bg-gradient-to-t from-pink-300 via-purple-300 to-indigo-400 animate-pool">
+        </div>
+    </div>
+
+    <div class="blur-layer w-full h-full backdrop-blur-[150px] fixed inset-0 -z-20">
+    </div>
+
+
+
+    <BaseHeader>
+    </BaseHeader>
+
+    <div class="flex justify-center bg-frost backdrop-blur-lg w-10/12 min-h-screen mt-32 rounded-2xl">
+      <slot>
+    
+    
+      </slot>
+    </div>
+
+    <Footer>
+    </Footer>
+
+    <script src="../lib/pool.js"></script>
+    <script src="../lib/menu.js"></script>
+	</body>
+</html>

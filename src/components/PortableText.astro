@@ -3,17 +3,42 @@ import Code from "./Code.astro";
 import YouTube from './Youtube.astro';
 import {PortableText as PortableTextInternal} from "astro-portabletext"
 import SanityImage from './SanityImage.astro';
+import type { ContentBlock } from '../lib/getContentBlock';
+import  getContentBlocks from '../lib/getContentBlock';
 
-const components = {
-  type: {
-    youtube: YouTube,
-    image: SanityImage,
-    code: Code,
-  },
-  mark: {
-  }
-};
+export interface Props {
+  content: ContentBlock['content'];
+}
+
+const { content } = Astro.props;
 
 ---
 
-<PortableTextInternal value={Astro.props.value} components={components} />
+<PortableTextInternal
+    value={content}
+    components={{
+
+      type: {
+        image: SanityImage,
+        code: Code,
+      },
+    }}
+  />
+
+
+
+
+
+
+
+<!-- <PortableTextInternal value={about} components={components}></PortableTextInternal> -->
+
+
+
+
+
+
+<!-- <PortableTextInternal value={Astro.props.value} components={components} /> -->
+
+
+
