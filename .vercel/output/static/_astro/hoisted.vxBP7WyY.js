@@ -1,0 +1,1 @@
+import"./hoisted.lOgWsF_E.js";let r=document.querySelectorAll(".blob");r.forEach(e=>{e.style.transform="translate(-50%, -50%)"});let o=0;document.addEventListener("mousemove",e=>{const t=performance.now();t-o>100&&(requestAnimationFrame(()=>{r.forEach(a=>{a.animate({left:e.clientX+"px",top:e.clientY+"px"},{duration:800,fill:"forwards"})})}),o=t)});
