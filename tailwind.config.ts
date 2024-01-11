@@ -33,7 +33,7 @@ export default {
 			},
 			animation: {
                 'pool': 'poolAnimation 20s infinite',
-				'poolRev': 'poolAnimationRev 20s infinite',
+				'poolRev': 'poolAnimationRev 15s infinite',
 			},
 		},
 	},
