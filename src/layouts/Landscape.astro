@@ -1,0 +1,37 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import BaseHeader from "../components/BaseHeader.astro";
+import Footer from "../components/Footer.astro";
+import Mountain from "../components/Mountain.astro";
+
+---
+<html lang="en">
+
+	<BaseHead>
+  </BaseHead>
+
+	<body class="flex flex-col items-center">
+
+    <div class="bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 w-full h-screen fixed inset-0 -z-50">
+    </div>
+
+    <Mountain>
+    </Mountain>
+
+    <BaseHeader>
+    </BaseHeader>
+
+    <!-- <div class="flex justify-center bg-neutral-100 w-10/12 min-h-screen mt-32 rounded-2xl">
+      <slot>
+    
+    
+      </slot>
+    </div> -->
+
+    <!-- <Footer>
+    </Footer> -->
+
+    
+    <script src="../lib/menu.js"></script>
+	</body>
+</html>

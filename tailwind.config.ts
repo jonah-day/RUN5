@@ -35,6 +35,11 @@ export default {
                 'pool': 'poolAnimation 20s infinite',
 				'poolRev': 'poolAnimationRev 15s infinite',
 			},
+			zIndex: {
+				'60': 60,
+				'70': 70,
+				'80': 80,
+			},
 		},
 	},
 	plugins: [
