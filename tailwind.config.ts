@@ -40,6 +40,9 @@ export default {
 				'70': 70,
 				'80': 80,
 			},
+			maxWidth: {
+				'300':'300%',
+			},
 		},
 	},
 	plugins: [
