@@ -29,7 +29,9 @@ export default {
 
 			},
 			width: {
-				'ultrawide': '1400px'
+				'ultrawide': '1400px',
+				'150': '150%',
+				'220': '220%',
 			},
 			animation: {
                 'pool': 'poolAnimation 20s infinite',
