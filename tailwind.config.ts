@@ -12,7 +12,8 @@ export default {
 
 			},
 			fontSize: {
-				'15xl': '14rem',
+				'15xl': '17rem',
+				'100p': '18.9vw',
 			},
 			colors: {
 				'frost': '#ffffff88',
@@ -41,6 +42,7 @@ export default {
 				'60': 60,
 				'70': 70,
 				'80': 80,
+				'100': 100,
 			},
 			maxWidth: {
 				'300':'300%',
