@@ -1,4 +1,4 @@
-
+document.addEventListener('astro:page-load', () => {
 
 let layerArr = document.querySelectorAll(".landscape");
 let layersObj = {};
@@ -26,3 +26,5 @@ function landscape(){
 }
 
 window.addEventListener("scroll", landscape);
+
+});

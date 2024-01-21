@@ -1,4 +1,4 @@
-
+document.addEventListener('astro:page-load', () => {
 
 let blobs = document.querySelectorAll('.blob');
 
@@ -27,5 +27,7 @@ document.addEventListener('mousemove', (event) => {
     });
     lastUpdate = now;
   }
+
+});
 
 });

@@ -1,4 +1,5 @@
 //Header menu button toggle:
+document.addEventListener('astro:page-load', () => {
 
 let menuButton = document.querySelector(".main-dropdown");
 let logoLayer = document.querySelector(".logo-container");
@@ -31,4 +32,7 @@ function clickDropMenu() {
     }
 }
 
+
 menuButton.addEventListener("click", clickDropMenu);
+
+});
