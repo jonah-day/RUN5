@@ -25,7 +25,7 @@ export default defineConfig({
     apiVersion: `2024-01-07`,
     studioBasePath: '/admin',
     //`false` if you want to ensure fresh data / Set useCdn to false if you're building statically
-    useCdn: false
+    useCdn: false,
   }),
   react(),
   tailwind()
