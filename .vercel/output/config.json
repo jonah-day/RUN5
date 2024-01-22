@@ -2,7 +2,7 @@
 	"version": 3,
 	"rewrites": [{
         "source": "/admin",
-        "destination": "/admin"
+        "destination": "https://test-for-run-5.vercel.app/admin"
     }],
 	"routes": [
 		{
