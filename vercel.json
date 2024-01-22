@@ -2,6 +2,6 @@
     "version": 2,
     "rewrites": [{
         "source": "/admin",
-        "destination": "https://test-for-run-5.vercel.app/admin"
+        "destination": "/admin"
     }]
 }
