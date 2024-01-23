@@ -19,6 +19,15 @@ const dataset = PUBLIC_SANITY_STUDIO_DATASET || PUBLIC_SANITY_DATASET;
 
 
 export default defineConfig({
+  output: 'hybrid',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+    speedInsights: {
+      enabled: true,
+    },
+  }),
   integrations: [sanity({
     projectId,
     dataset,
@@ -30,13 +39,4 @@ export default defineConfig({
   react(),
   tailwind()
   ],
-  output: 'hybrid',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-    speedInsights: {
-      enabled: true,
-    },
-  }),
 });

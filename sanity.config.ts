@@ -22,6 +22,7 @@ export default defineConfig({
     visionTool(),
     vercelDeployTool(),
   ],
+  studioBasePath: '/admin',
   
   schema: {
     types: schemaTypes,
