@@ -1,1 +1,0 @@
-import"./hoisted.Bm8KBnkA.js";document.addEventListener("astro:page-load",()=>{let o=document.querySelectorAll(".landscape"),l={};o.forEach(e=>{let t=e.id;l[t]=e});function n(){let e=document.documentElement.scrollTop;for(let t in l){let r=t*e;l[t].style.marginTop=`-${r}px`}}window.addEventListener("scroll",n)});

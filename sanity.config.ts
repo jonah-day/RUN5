@@ -5,14 +5,7 @@ import { sanityClient } from 'sanity:client';
 import { schemaTypes } from './schemas/index.ts';
 import { vercelDeployTool } from 'sanity-plugin-vercel-deploy';
 
-// const { projectId, dataset } = sanityClient.config();
-
-const projectId =
-  import.meta.env.PUBLIC_SANITY_STUDIO_PROJECT_ID! ||
-  import.meta.env.PUBLIC_SANITY_PROJECT_ID!;
-const dataset =
-  import.meta.env.PUBLIC_SANITY_STUDIO_DATASET! ||
-  import.meta.env.PUBLIC_SANITY_DATASET!;
+const { projectId, dataset } = sanityClient.config();
 
 if (!projectId || !dataset)
   throw new Error(

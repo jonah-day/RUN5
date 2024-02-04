@@ -28,6 +28,9 @@ export default defineConfig({
       enabled: true,
     },
   }),
+  prefetch: {
+    prefetchAll: true,
+  },
   integrations: [sanity({
     projectId,
     dataset,

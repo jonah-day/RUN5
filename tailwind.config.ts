@@ -11,12 +11,12 @@ export default {
 				'sloth-light': 'Sloth Light',
 
 			},
-			fontSize: {
+			fontSize: { 
 				'15xl': '17rem',
 				'100p': '18.9vw',
 			},
 			colors: {
-				'frost': '#ffffff88',
+				'frost': '#E9D8FF88',
 			},
 			transitionProperty: {
 				'animated-cover': 'margin-right 0.4s cubic-bezier(0.44, 0.21, 0, 1.1)',
@@ -44,6 +44,16 @@ export default {
 				'80': 80,
 				'90': 90,
 				'100': 100,
+				'110': 110,
+				'120': 120,
+				'130': 130,
+				'140': 140,
+				'150': 150,
+				'160': 160,
+				'170': 170,
+				'180': 180,
+				'190': 190,
+				'200': 200,
 			},
 			maxWidth: {
 				'300':'300%',
