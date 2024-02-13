@@ -13,15 +13,23 @@ layerArr.forEach((element) => {
 //   layersObj[each] = elementId;
 // }
 
+let lastUpdate = 0;
+
 function landscape(){
 
   let scrollDist = document.documentElement.scrollTop;
 
-  for (let each in layersObj){
-    let offSet = each;
-    let newPos = offSet * scrollDist;
+  const now = performance.now();
 
-    layersObj[each].style.marginTop = `-${newPos}px`;
+  if (now - lastUpdate > 10) {
+    
+    for (let each in layersObj){
+      let offSet = each;
+      let newPos = offSet * scrollDist;
+    
+      layersObj[each].style.marginTop = `-${newPos}px`;
+    }
+  lastUpdate = now;
   }
 }
 
