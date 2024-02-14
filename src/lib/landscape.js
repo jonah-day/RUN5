@@ -21,7 +21,7 @@ function landscape(){
 
   const now = performance.now();
 
-  if (now - lastUpdate > 10) {
+  if (now - lastUpdate > 2) {
     
     for (let each in layersObj){
       let offSet = each;
