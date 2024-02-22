@@ -88,6 +88,47 @@
   transform: translateZ(-2px) scale(3)
 }
 
+.para-treeline {
+  transform: translateZ(-2px) scale(3)
+}
+
+.para-trees {
+  transform: translateZ(-3px) scale(4)
+}
+
+.para-field {
+  transform: translateZ(-4px) scale(5)
+}
+
+.para-hills-front {
+  transform: translateZ(-5px) scale(6)
+}
+
+.para-hills-back {
+  transform: translateZ(-6px) scale(7)
+}
+
+.para-backdrop {
+  transform: translateZ(-7px) scale(8)
+}
+
 .para-trees-copy {
   transform: translateZ(-3px) scale(4)
 }
+
+.para-field-copy {
+  transform: translateZ(-4px) scale(5)
+}
+
+.para-hills-front-copy {
+  transform: translateZ(-5px) scale(6)
+}
+
+.para-hills-back-copy {
+  transform: translateZ(-6px) scale(7)
+}
+
+.para-backdrop-copy {
+  transform: translateZ(-7px) scale(8)
+}
+
