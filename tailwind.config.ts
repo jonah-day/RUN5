@@ -38,6 +38,9 @@ export default {
                 'pool': 'poolAnimation 20s infinite',
 				'poolRev': 'poolAnimationRev 15s infinite',
 			},
+			backdropBlur: {
+				'lg':'16px',
+			},
 			zIndex: {
 				'60': 60,
 				'70': 70,

@@ -22,13 +22,14 @@ function landscape(){
   const now = performance.now();
 
   if (now - lastUpdate > 20) {
-    
+    requestAnimationFrame(() => {
     for (let each in layersObj){
       let offSet = each;
       let newPos = offSet * scrollDist;
     
       layersObj[each].style.marginTop = `-${newPos}px`;
     }
+  });
   lastUpdate = now;
   }
 }

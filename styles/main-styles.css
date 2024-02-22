@@ -65,3 +65,29 @@
     rotate: 0deg;
   }
 }
+
+
+.para-container {
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.para {
+  position: absolute;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+}
+
+.para-shoreline {
+  transform: translateZ(-1px) scale(2)
+}
+
+.para-treeline-copy {
+  transform: translateZ(-2px) scale(3)
+}
+
+.para-trees-copy {
+  transform: translateZ(-3px) scale(4)
+}
