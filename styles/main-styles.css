@@ -81,39 +81,39 @@
 }
 
 .para-shoreline {
-  transform: translateZ(-1px) scale(2)
+  transform: translateZ(0px) scale(1)
 }
 
 .para-treeline-copy {
-  transform: translateZ(-2px) scale(3)
+  transform: translateZ(0px) scale(1)
 }
 
 .para-treeline {
-  transform: translateZ(-2px) scale(3)
+  transform: translateZ(0px) scale(1)
 }
 
 .para-trees {
-  transform: translateZ(-3px) scale(4)
+  transform: translateZ(-.18px) scale(1.18)
 }
 
 .para-field {
-  transform: translateZ(-4px) scale(5)
+  transform: translateZ(-.29px) scale(1.29)
 }
 
 .para-hills-front {
-  transform: translateZ(-5px) scale(6)
+  transform: translateZ(-.35px) scale(1.35)
 }
 
 .para-hills-back {
-  transform: translateZ(-6px) scale(7)
+  transform: translateZ(-.38px) scale(1.38)
 }
 
 .para-backdrop {
-  transform: translateZ(-7px) scale(8)
+  transform: translateZ(-.58px) scale(1.58);
 }
 
-.para-trees-copy {
-  transform: translateZ(-3px) scale(4)
+/* .para-trees-copy {
+  transform: translateZ(.13px) scale(.87);
 }
 
 .para-field-copy {
@@ -131,4 +131,4 @@
 .para-backdrop-copy {
   transform: translateZ(-7px) scale(8)
 }
-
+ */
