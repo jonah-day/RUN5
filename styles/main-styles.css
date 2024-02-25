@@ -15,6 +15,26 @@
   --menu-bar-desk-width: 30px;
   --menu-bar-width: 24px;
 
+
+
+  /* LANDSCAPE SVGS */
+
+  --backdrop-top: #f0abfc;
+  --backdrop-bot: #ff9f8b;
+
+  --mt-background-top: #fbdbc7;
+  --mt-background-bot: #d5b0ec;
+
+  --negative-top: #9d3b4a;
+  --negative-bot: #494368;
+
+  --hills-back: #474165;
+  --hills-front: #3c3655;
+  --field: #302c44;
+  --trees: #252134;
+  --treeline: #15131d;
+  --shoreline: #252134;
+
 }
 
 /* SLOTH */
@@ -66,6 +86,10 @@
   }
 }
 
+
+
+
+/* SAFARI SVG LANDSCAPE */
 
 .para-container {
   perspective: 1px;
@@ -132,3 +156,5 @@
   transform: translateZ(-7px) scale(8)
 }
  */
+
+

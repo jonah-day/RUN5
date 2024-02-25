@@ -5,7 +5,6 @@ import Footer from "../components/Footer.astro";
 import Mountain from "../components/Mountain.astro";
 import MtFinal from "../components/MtFinal.astro";
 import MtSun from "../components/MtSun.astro";
-import FrontContent from "../components/FrontContent.astro";
 import ExpHeader from "../components/ExpHeader.astro";
 import MtPng from "../components/MtPng.astro";
 import FinalHeader from "../components/FinalHeader.astro";
@@ -17,7 +16,7 @@ import FinalHeader from "../components/FinalHeader.astro";
 	<BaseHead>
   </BaseHead>
 
-	<body class="flex flex-col h-[4000px]">
+	<body class="flex flex-col items-center h-full">
 
     <!-- <div class="bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 w-full h-full fixed inset-0 -z-100">
     </div> -->
@@ -34,24 +33,23 @@ import FinalHeader from "../components/FinalHeader.astro";
     <!-- <MtPng>
     </MtPng> -->
 
-    <!-- <BaseHeader>
-    </BaseHeader> -->
+    <BaseHeader>
+    </BaseHeader>
 
-    <ExpHeader>
-    </ExpHeader>
+    <!-- <ExpHeader>
+    </ExpHeader> -->
 
     <!-- <FinalHeader>
     </FinalHeader> -->
 
-    <FrontContent>
-    </FrontContent>
 
-    <!-- <div class="flex justify-center bg-neutral-100 w-10/12 min-h-screen mt-32 rounded-2xl">
+
+    <div class="flex justify-center bg-frost backdrop-blur-2xl w-10/12 min-h-screen mt-[270vh] rounded-2xl z-300">
       <slot>
     
     
       </slot>
-    </div> -->
+    </div>
 
     <!-- <Footer>
     </Footer> -->
