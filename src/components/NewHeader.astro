@@ -1,0 +1,19 @@
+---
+import Logo from "./Logo.astro";
+import NewLogo from './NewLogo.astro';
+
+---
+
+<header class="fixed flex justify-end w-full h-12 lg:h-16 z-410">
+    <div class="flex fixed h-12 lg:h-16 ml-[1vw] justify-start items-center w-full opacity-100">
+        <NewLogo>
+        </NewLogo>
+    </div>
+    <div class="flex fixed h-12 lg:h-16 justify-end -mt-[.1rem] lg:-mt-[.17rem] w-1/4">
+        <button class="mr-[10.3px] justify-self-end w-8 lg:mr-[15.5px] lg:w-10 border-none bg-transparent">
+          <div class="w-6 lg:w-[30px] h-[3.2px] m-[3.2px] lg:h-1 lg:m-1 rounded-xl bg-black"></div>
+          <div class="middle-bar w-[var(--menu-bar-width)] lg:w-[var(--menu-bar-desk-width)] h-[3.2px] m-[3.2px] lg:h-1 lg:m-1 rounded-xl bg-black transition-hamburger-width"></div>
+          <div class="w-6 lg:w-[30px] h-[3.2px] m-[3.2px] lg:h-1 lg:m-1 rounded-xl bg-black"></div>
+        </button>
+    </div>
+</header>

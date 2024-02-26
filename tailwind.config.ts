@@ -15,9 +15,14 @@ export default {
 				'15xl': '17rem',
 				'100p': '18.9vw',
 				'25p': '11.5vw',
+				'20p': '8.7vw',
 			},
 			colors: {
-				'frost': '#E9D8FF88',
+				'frost': '#E9D8FF',
+				'frost-blur': '#E9D8FF70',
+				'frost-q': '#eee1fe',
+				'frost-half': '#f2e9fd',
+				'frost-3q': '#f6f2fc',
 			},
 			transitionProperty: {
 				'animated-cover': 'margin-right 0.4s cubic-bezier(0.44, 0.21, 0, 1.1)',

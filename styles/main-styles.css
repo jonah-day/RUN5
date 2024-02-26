@@ -157,4 +157,6 @@
 }
  */
 
-
+.logo-color {
+  color:var(--treeline);
+}
