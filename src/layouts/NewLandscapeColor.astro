@@ -1,0 +1,68 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import BaseHeader from "../components/BaseHeader.astro";
+import Footer from "../components/Footer.astro";
+import Mountain from "../components/Mountain.astro";
+import MtFinal from "../components/MtFinal.astro";
+import NewMtFinal from "../components/NewMtFinal.astro";
+import NewMtColor from "../components/NewMtColor.astro";
+import ExpHeader from "../components/ExpHeader.astro";
+import MtPng from "../components/MtPng.astro";
+import FinalHeader from "../components/FinalHeader.astro";
+import NewHeaderColor from '../components/NewHeaderColor.astro';
+
+---
+<html lang="en">
+
+	<BaseHead>
+  </BaseHead>
+
+	<body class="flex flex-col items-center h-full">
+
+    <!-- <div class="bg-gradient-to-br from-pink-300 via-purple-300 to-indigo-400 w-full h-full fixed inset-0 -z-100">
+    </div> -->
+<!-- 
+    <Mountain>
+    </Mountain> -->
+
+    <!-- <MtFinal>
+    </MtFinal> -->
+
+    <NewMtColor>
+    </NewMtColor>
+<!-- 
+    <MtSun>
+    </MtSun> -->
+
+    <!-- <MtPng>
+    </MtPng> -->
+<!-- 
+    <BaseHeader>
+    </BaseHeader> -->
+
+    <NewHeaderColor>
+    </NewHeaderColor>
+
+    
+
+    <!-- <ExpHeader>
+    </ExpHeader> -->
+
+    <!-- <FinalHeader>
+    </FinalHeader> -->
+
+    <div class="flex justify-center w-10/12 bg-frost-half bg-opacity-30 min-h-screen rounded-2xl mt-[60vh] lg:mt-[110vh] z-110">
+      <slot>
+    
+    
+      </slot>
+    </div>
+
+    <!-- <Footer>
+    </Footer> -->
+
+    
+    <script src="../lib/menu.js"></script>
+    <script src="../lib/landscape.js"></script>
+	</body>
+</html>

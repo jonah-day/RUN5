@@ -19,6 +19,8 @@
 
   /* LANDSCAPE SVGS */
 
+  --logo-color: #15131d;
+
   --backdrop-top: #f0abfc;
   --backdrop-bot: #ff9f8b;
 
@@ -34,6 +36,33 @@
   --trees: #252134;
   --treeline: #15131d;
   --shoreline: #252134;
+
+
+
+
+  /* LANDSCAPE SVGS NIGHT*/
+
+  /* --backdrop-top2: #0F0B08;
+  --backdrop-bot2: #143C63; */
+
+  --logo-color2: #eee1fe75;
+
+  --backdrop-top2: #0f161e;
+  --backdrop-bot2: #395475;
+
+  --mt-background-top2: #C8D8E8;
+  --mt-background-bot2: #3C6382;
+
+  --negative-top2: #0F161E;
+  --negative-bot2: #02233C;
+
+  --hills-back2: #02233c;
+  --hills-front2: #052035;
+  --field2: #091d2d;
+  --trees2: #0c1a27;
+  --treeline2: #0f161e;
+  --shoreline2: #0c1a27;
+
 
 }
 
@@ -156,7 +185,3 @@
   transform: translateZ(-7px) scale(8)
 }
  */
-
-.logo-color {
-  color:var(--treeline);
-}
