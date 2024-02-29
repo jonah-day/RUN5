@@ -21,6 +21,9 @@
 
   --logo-color: #15131d;
 
+  /* --glass: #3C638280;
+  --glass-text: ; */
+
   --backdrop-top: #f0abfc;
   --backdrop-bot: #ff9f8b;
 
@@ -46,6 +49,10 @@
   --backdrop-bot2: #143C63; */
 
   --logo-color2: #eee1fe75;
+
+
+  --glass: #3C638220;
+  --glass-text: #f2e9fd70;
 
   --backdrop-top2: #0f161e;
   --backdrop-bot2: #395475;
