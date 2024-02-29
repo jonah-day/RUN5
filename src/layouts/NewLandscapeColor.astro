@@ -1,7 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import BaseHeader from "../components/BaseHeader.astro";
-import Footer from "../components/Footer.astro";
+import FooterColor from "../components/FooterColor.astro";
 import Mountain from "../components/Mountain.astro";
 import MtFinal from "../components/MtFinal.astro";
 import NewMtFinal from "../components/NewMtFinal.astro";
@@ -51,15 +51,15 @@ import NewHeaderColor from '../components/NewHeaderColor.astro';
     <!-- <FinalHeader>
     </FinalHeader> -->
 
-    <div class="flex justify-center w-11/12 bg-[var(--glass)] min-h-screen rounded-2xl mt-[60vh] lg:mt-[110vh] z-110">
+    <div class="flex justify-center w-11/12 lg:w-10/12 bg-[var(--glass2)] min-h-screen rounded-2xl mt-[60vh] lg:mt-[110vh] z-110">
       <slot>
     
     
       </slot>
     </div>
 
-    <!-- <Footer>
-    </Footer> -->
+    <FooterColor>
+    </FooterColor>
 
     
     <script src="../lib/menu.js"></script>
