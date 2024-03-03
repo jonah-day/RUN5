@@ -21,7 +21,7 @@
 
   --logo-color: #15131d;
 
-  --glass: #f2e9fd35;
+  --glass: #f2e9fd50;
   --glass-text: #15131d;
 
   --backdrop-top: #f0abfc;
@@ -192,3 +192,12 @@
   transform: translateZ(-7px) scale(8)
 }
  */
+
+
+
+
+ /* COPYRIGHT YEAR */
+
+ .copyright-year {
+  content: var(--copyright-year);
+}
